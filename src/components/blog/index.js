@@ -1,24 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Home = () => {
-  const [value, setValue] = useState('');
+const Blog = () => {
+  //   [value, setValue] = useState('');
 
   //   useEffect(() => {
-  //     return () => {}, [];
+  //     return (
+  //       () => {
+  //         effect;
+  //       },
+  //       [input]
+  //     );
   //   });
 
-  return (
-    <main
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignContent: 'center',
-        flexDirection: 'column'
-      }}>
-      <p>The Micro Blog</p>
-      <input onChange={setValue()} name="title" />
-    </main>
-  );
+  return <main>BLOG</main>;
 };
 
-export default Home;
+export default Blog;

@@ -40,11 +40,12 @@ const App = () => {
           </Link>
         </nav>
       </header>
-
-      <Router>
-        <Home path="/" />
-        <Blog path="blog" />
-      </Router>
+      <main>
+        <Router>
+          <Home path="/" />
+          <Blog path="blog" />
+        </Router>
+      </main>
     </div>
   );
 };
