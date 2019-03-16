@@ -10,24 +10,32 @@ import './App.css';
 const App = () => {
   const [colorLogo, changeColor] = useState('#61DAFB');
 
-  const handleClick = () => {
-    changeColor(colorLogo ? 'red' : '#61DAFB');
-  };
+  // const handleClick = () => {
+  //   changeColor(colorLogo ? 'red' : '#61DAFB');
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img
-          src={logo}
-          className="App-logo"
-          alt="logo"
-          style={{ color: colorLogo }}
-        />
-        <nav>
-          <Link to="/" onClick={handleClick}>
+      <header
+        className="App-header"
+        style={{ border: `1px solid ${colorLogo}` }}>
+        <img src={logo} className="App-logo" alt="logo" />
+        <nav
+          style={{
+            height: '5vh',
+            display: 'flex',
+            flexDirection: 'row',
+            position: 'relative'
+          }}>
+          <Link
+            to="/"
+            onClick={() => changeColor(colorLogo ? 'red' : '#61DAFB')}>
             Home
           </Link>
           |
-          <Link to="Blog" onClick={handleClick}>
+          <Link
+            to="Blog"
+            onClick={() => changeColor(colorLogo ? 'red' : '#61DAFB')}>
             Blog
           </Link>
         </nav>

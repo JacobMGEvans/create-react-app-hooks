@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Home = () => {
   const [value, setValue] = useState('');
@@ -8,11 +8,15 @@ const Home = () => {
   //   });
 
   return (
-    <main>
-      <title>The Micro Blog</title>
-      <input onChange={setValue()} name="title">
-        {value}
-      </input>
+    <main
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent: 'center',
+        flexDirection: 'column'
+      }}>
+      <p>The Micro Blog</p>
+      <input onChange={setValue()} name="title" />
     </main>
   );
 };
